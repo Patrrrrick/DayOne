@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day One · iPhone 17 Preview</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#E9ECF3}body{display:flex;flex-direction:column;align-items:center;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#555B70;padding:20px 12px;gap:12px}.preview-label{font-size:12px;line-height:20px;display:flex;justify-content:space-between;gap:24px;width:402px;max-width:100%}.preview-label a{color:#0645BC;text-underline-offset:3px}.preview-stage{width:402px;height:874px;flex:none;position:relative}.device{width:402px;height:874px;position:absolute;top:0;left:0;transform-origin:top left;background:#F8F8FF;box-shadow:0 0 0 1px #DCE0EA,0 8px 32px #19213214;overflow:hidden}iframe{display:block;width:402px;height:874px;border:0;background:#F8F8FF}
+</style>
+</head>
+<body>
+<div class="preview-label"><span>iPhone 17 · 402 × 874</span><a href="index.html">Responsive view ↗</a></div>
+<div class="preview-stage"><div class="device"><iframe src="index.html" title="Day One — iPhone 17 preview"></iframe></div></div>
+<script>
+// Preserve a true 402 × 874 CSS-pixel viewport; only scale the outer presentation.
+function fitPreview(){const scale=Math.min(1,Math.max(0.1,(innerWidth-24)/402));const stage=document.querySelector('.preview-stage');stage.style.width=402*scale+'px';stage.style.height=874*scale+'px';document.querySelector('.device').style.transform=`scale(${scale})`}
+window.addEventListener('resize',fitPreview);fitPreview();
+</script>
+</body>
+</html>
